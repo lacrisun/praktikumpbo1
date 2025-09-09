@@ -1,3 +1,13 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package com.kelompok2.pbogustipanjiwidodo;
+
+/**
+ *
+ * @author desktop
+ */
 import java.util.Scanner;
 
 public class KalkulatorBalok {
@@ -13,9 +23,6 @@ public class KalkulatorBalok {
         System.out.print("Tinggi Balok (cm) : ");
         double tinggi = sc.nextDouble();
 
-        // Menghitung keliling balok (K = 4 * (p + l + t);)
-        double kelilingBalok = 4 * (panjang + lebar + tinggi);
-
         // Menghitung luas permukaan balok (L = 2 * ((p * l) + (p * t) + (l * t));)
         double luasBalok = 2 * ((panjang * lebar) + (panjang * tinggi) + (lebar * tinggi));
 
@@ -23,10 +30,10 @@ public class KalkulatorBalok {
         double volumeBalok = panjang * lebar * tinggi;
 
         // Menampilkan output
-        System.out.printf("## Informasi Balok ##%nPanjang : %.1f cm%nLebar : %.1f cm%nTinggi : %.1f cm%n", panjang, lebar, tinggi);
-
-        System.out.println("Keliling Balok : " + kelilingBalok + " cm");
+        System.out.printf("## Informasi Balok ##%nanjang : %.1f cm%nLebar : %.1f cm%nTinggi : %.1f cm%n", panjang, lebar, tinggi);
+        
         System.out.println("Luas Balok : " + luasBalok + " cm\u00B2");
         System.out.println("Volume Balok : " + volumeBalok + " cm\u00B3");
     }
 }
+
